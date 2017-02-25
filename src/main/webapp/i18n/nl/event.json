@@ -1,0 +1,29 @@
+{
+    "moestuinApp": {
+        "event" : {
+            "home": {
+                "title": "Events",
+                "createLabel": "Maak een nieuwe Event",
+                "createOrEditLabel": "Maak of wijzig een Event",
+                "search": "Search for Event"
+            },
+            "created": "A new Event is created with identifier {{ param }}",
+            "updated": "A Event is updated with identifier {{ param }}",
+            "deleted": "A Event is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Bent u zeker dat u Event {{ id }} wilt verwijderen?"
+            },
+            "detail": {
+                "title": "Event"
+            },
+            "name": "Name",
+            "eventOpenTime": "Event Open Time",
+            "eventCloseTime": "Event Close Time",
+            "active": "Active",
+            "throughputPerMinute": "Throughput Per Minute",
+            "maxPassages": "Max Passages",
+            "redirectUrl": "Redirect Url",
+            "tenant": "Tenant"
+        }
+    }
+}

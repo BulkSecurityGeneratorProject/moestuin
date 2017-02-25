@@ -1,0 +1,49 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipName": "tenant",
+            "otherEntityName": "tenant",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "eventOpenTime",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "eventCloseTime",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "active",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "throughputPerMinute",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "maxPassages",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "redirectUrl",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170225195011",
+    "entityTableName": "event",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceClass"
+}

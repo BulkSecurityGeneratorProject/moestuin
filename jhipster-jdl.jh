@@ -1,0 +1,29 @@
+entity Tenant {
+	name String required,
+    apiKey String required,
+  	streetAddress String,
+	postalCode String,
+	city String,
+    country String
+}
+
+entity Event {
+	name String required,
+	eventOpenTime ZonedDateTime,
+	eventCloseTime ZonedDateTime,
+	active Boolean,
+	throughputPerMinute Integer,
+	maxPassages Integer,
+	redirectUrl String
+}
+
+relationship OneToMany {
+	Tenant{event} to Event
+}
+
+paginate Tenant, Event with pagination
+
+dto * with mapstruct
+
+service all with serviceClass
+

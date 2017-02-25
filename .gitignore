@@ -136,3 +136,4 @@ deploy/
 # ESLint
 ######################
 .eslintcache
+/.apt_generated/

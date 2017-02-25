@@ -1,0 +1,28 @@
+{
+    "moestuinApp": {
+        "tenant" : {
+            "home": {
+                "title": "Tenants",
+                "createLabel": "Maak een nieuwe Tenant",
+                "createOrEditLabel": "Maak of wijzig een Tenant",
+                "search": "Search for Tenant"
+            },
+            "created": "A new Tenant is created with identifier {{ param }}",
+            "updated": "A Tenant is updated with identifier {{ param }}",
+            "deleted": "A Tenant is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Bent u zeker dat u Tenant {{ id }} wilt verwijderen?"
+            },
+            "detail": {
+                "title": "Tenant"
+            },
+            "name": "Name",
+            "apiKey": "Api Key",
+            "streetAddress": "Street Address",
+            "postalCode": "Postal Code",
+            "city": "City",
+            "country": "Country",
+            "event": "Event"
+        }
+    }
+}

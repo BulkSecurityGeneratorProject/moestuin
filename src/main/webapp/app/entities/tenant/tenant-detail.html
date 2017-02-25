@@ -1,0 +1,43 @@
+
+<div>
+    <h2><span data-translate="moestuinApp.tenant.detail.title">Tenant</span> {{vm.tenant.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span data-translate="moestuinApp.tenant.name">Name</span></dt>
+        <dd>
+            <span>{{vm.tenant.name}}</span>
+        </dd>
+        <dt><span data-translate="moestuinApp.tenant.apiKey">Api Key</span></dt>
+        <dd>
+            <span>{{vm.tenant.apiKey}}</span>
+        </dd>
+        <dt><span data-translate="moestuinApp.tenant.streetAddress">Street Address</span></dt>
+        <dd>
+            <span>{{vm.tenant.streetAddress}}</span>
+        </dd>
+        <dt><span data-translate="moestuinApp.tenant.postalCode">Postal Code</span></dt>
+        <dd>
+            <span>{{vm.tenant.postalCode}}</span>
+        </dd>
+        <dt><span data-translate="moestuinApp.tenant.city">City</span></dt>
+        <dd>
+            <span>{{vm.tenant.city}}</span>
+        </dd>
+        <dt><span data-translate="moestuinApp.tenant.country">Country</span></dt>
+        <dd>
+            <span>{{vm.tenant.country}}</span>
+        </dd>
+    </dl>
+
+    <button type="submit"
+            ui-sref="{{ vm.previousState }}"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span data-translate="entity.action.back"> Back</span>
+    </button>
+
+    <button type="button" ui-sref="tenant-detail.edit({id:vm.tenant.id})" class="btn btn-primary">
+        <span class="glyphicon glyphicon-pencil"></span>
+        <span class="hidden-xs hidden-sm" data-translate="entity.action.edit"> Edit</span>
+    </button>
+</div>
