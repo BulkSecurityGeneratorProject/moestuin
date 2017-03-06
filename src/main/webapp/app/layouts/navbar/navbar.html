@@ -8,8 +8,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand logo" href="#/" ng-click="vm.collapseNavbar()">
-                <img class="logo-img" src="content/images/logo-jhipster.png"/>
-                <span data-translate="global.title">Moestuin</span> <span class="navbar-version">v{{VERSION}}</span>
+                <span data-translate="global.title">Easyqueue</span> <span class="navbar-version">v{{VERSION}}</span>
             </a>
         </div>
         <div class="navbar-collapse" uib-collapse="vm.isNavbarCollapsed" ng-switch="vm.isAuthenticated()">
@@ -70,19 +69,13 @@
                                 <span data-translate="global.menu.account.password">Password</span>
                             </a>
                         </li>
-                        <li ui-sref-active="active" ng-switch-when="true">
-                            <a ui-sref="sessions" ng-click="vm.collapseNavbar()">
-                                <span class="glyphicon glyphicon-cloud"></span>&nbsp;
-                                <span data-translate="global.menu.account.sessions">Sessions</span>
-                            </a>
-                        </li>
-                        <li ui-sref-active="active" ng-switch-when="true">
+						<li ui-sref-active="active" ng-switch-when="true">
                             <a href="" ng-click="vm.logout()" id="logout">
                                 <span class="glyphicon glyphicon-log-out"></span>&nbsp;
                                 <span data-translate="global.menu.account.logout">Sign out</span>
                             </a>
                         </li>
-                        <li ui-sref-active="active" ng-switch-when="false">
+                       <li ui-sref-active="active" ng-switch-when="false">
                             <a href="" ng-click="vm.login()" id="login">
                                 <span class="glyphicon glyphicon-log-in"></span>&nbsp;
                                 <span data-translate="global.menu.account.login">Sign in</span>
@@ -170,7 +163,18 @@
                         </li>
                     </ul>
                 </li>
-            </ul>
+                <li ui-sref-active="{active: vm.isAuthenticated()}" ng-switch-when="true">
+                	<a ui-sref="settings" ng-click="vm.collapseNavbar()">
+                        <span>{{vm.account.login}}</span>
+                    </a>
+                </li>
+                <li ui-sref-active="{active: vm.isAuthenticated()}" ng-switch-when="true">
+                    <a href="" ng-click="vm.logout()" id="logout">
+                       <span class="glyphicon glyphicon-log-out"></span>&nbsp;
+                       <span data-translate="global.menu.account.logout">Sign out</span>
+                    </a>
+                </li>
+             </ul>
         </div>
     </div>
 </nav>
